@@ -56,14 +56,24 @@ function greeting(a,b){
     console.log('Hello, World!'+[a+b]);
 }
 // 3&4 are arguments
-greeting(3,4)
+// greeting(3,4)
 
-let num1 = 5
+// let num1 = 5
 // ++num1 pre increment
 // num1++ post increment
 // --num1 pre decrement
 // num1-- post decrement
 
-console.log(num1--);
-console.log(num1);
+// console.log(num1--);
+// console.log(num1);
+
+/* String Methods */
+
+let myString = 'Something'
+// shows us the length of the string
+let length = myString.length
+// make text capital '--> myString.toUpperCase
+// make text small letter '--> myString.toLowerCase
+let split = myString.toLowerCase().split('e')
+console.log(split);
 
