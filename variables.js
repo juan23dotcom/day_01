@@ -32,11 +32,13 @@
 
 // object literal -declare (make) an object
 
-let table = {
-    material:"wood",
-    no_of_legs: 4,
-    occupied: true,
-}
+// let table = {
+//     material:"wood",
+//     no_of_legs: 4,
+//     occupied: true,
+// }
+
+/*
 // bracket notation
 console.log(table['material'])
 // dot notation
@@ -46,15 +48,16 @@ let {material, occupied,no_of_legs} = table//wood
 console.log(material, occupied, no_of_legs);
 //let {occupied} = table//true
 //console.log(occupied);
+*/
 
 // functions
 // () -> parentheses
 // [] -> brackets
 // {} -> braces
-function greeting(a,b){
+//function greeting(a,b){
     // a&b are parameters
-    console.log('Hello, World!'+[a+b]);
-}
+//    console.log('Hello, World!'+[a+b]);
+//}
 // 3&4 are arguments
 // greeting(3,4)
 
@@ -140,38 +143,74 @@ function greeting(a,b){
 // 2 - 'Cloudy'
 // 3 - 'Raining'
 
-let value = 1
-switch (value){
-    case 1:
-        console.log('It is Sunny');   
-        break;
-    case 2:
-        console.log('It is Cloudy');   
-        break;
-    case 3:
-        console.log('It is Raining');   
-        break;
-    default:
-        console.log('invalid');   
-        break;
-}
+// let value = 1
+// switch (value){
+//     case 1:
+//         console.log('It is Sunny');   
+//         break;
+//     case 2:
+//         console.log('It is Cloudy');   
+//         break;
+//     case 3:
+//         console.log('It is Raining');   
+//         break;
+//     default:
+//         console.log('invalid');   
+//         break;
+// }
 
 /* Switch Statements (Variation 2) */
-let num = 8
-switch (true) {
-    case num % 2 ==0:
-        console.log('Number is even');  
-        break;
+// let num = 8
+// switch (true) {
+//     case num % 2 ==0:
+//         console.log('Number is even');  
+//         break;
 
-    default:
-        console.log('Number is odd');
-        break;
-}
+//     default:
+//         console.log('Number is odd');
+//         break;
+// }
 
 /* Ternary Operator */
 
-num = 11
-console.log(num>10 ? 'this is true' : 'this is false');
+// num = 11
+// console.log(num>10 ? 'this is true' : 'this is false');
 
-let studAtLC = true 
-console.log(studAtLC == true ? 'youre a student' : 'youre not a student');
+// let studAtLC = true 
+// console.log(studAtLC == true ? 'youre a student' : 'youre not a student');
+
+/* Loops */
+
+// For Loop
+// for (let x = 1; x < 10; x++){
+//     console.log(x);  
+// }
+
+// While Loop
+// let w = 1
+// while(w<5){
+//     console.log('my name');
+//     w++  
+// }
+
+// Do While Loop
+// do{
+//     console.log('my name');
+//     w++ 
+// }while (w<7)
+
+// Looping through an Array
+let names = ['Juan', 'Raafiek', 'Luke', 'Azola']
+for (let x = 0; x < names.length; x++ ){
+    console.log(names[x])
+}
+
+// For of Loop
+for (let name of names){
+    console.log(name);
+}
+
+// For in Loop
+for (let index in names){
+    console.log(names[index]);
+}
